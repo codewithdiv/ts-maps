@@ -1,7 +1,15 @@
-import { Company } from "./class/CompanyClass";
-import { User } from "./class/UserClass";
+/// <reference types="@types/google.maps" />
 
-const user = new User()
-const company = new Company()   
-console.log(user);
-console.log(company);
+import { CustomMap } from "./class/CustomMapClass";
+import { User } from "./class/UserClass";
+import { Company } from "./class/CompanyClass";
+
+const user = new User();
+const company = new Company();
+const map = new CustomMap("map");
+
+map.addMarker(user);
+map.addMarker(company);
+
+// console.log(user);
+// console.log(company);
