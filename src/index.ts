@@ -6,6 +6,8 @@ import { Company } from "./class/CompanyClass";
 
 const user = new User();
 const company = new Company();
+
+// Use this to create an instance of a map and add a marker
 const map = new CustomMap("map");
 
 map.addMarker(user);
